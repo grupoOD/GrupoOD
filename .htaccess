@@ -1,0 +1,68 @@
+# ==============================================================================
+# GRUPO OD - Configuración Apache
+# ==============================================================================
+
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Bloquear acceso a archivos sensibles
+<FilesMatch "(^\.htaccess|^\.git|composer\.json|composer\.lock|\.env)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Proteger archivos de configuración
+<Files "conexion.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Comprimir archivos para mejor rendimiento
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Habilitar caché del navegador
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# Headers de seguridad
+<IfModule mod_headers.c>
+    # Prevenir clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevenir MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Habilitar XSS protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Configuración de errores personalizados (opcional)
+# ErrorDocument 404 /GrupoOD/404.php
+# ErrorDocument 500 /GrupoOD/500.php
+
+# Deshabilitar listado de directorios
+Options -Indexes
+
+# Forzar UTF-8
+AddDefaultCharset UTF-8
+
+# Protección adicional para archivos PHP
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

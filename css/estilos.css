@@ -1,0 +1,641 @@
+:root {
+  --azul-oscuro: #354b8c;
+  --azul-medio: #30588c;
+  --azul-claro: #329aa6;
+  --gris-claro: #f2f2f2;
+  --negro: #0d0d0d;
+  --font-primary: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* =========================
+   BODY
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: var(--gris-claro);
+  color: var(--negro);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selección de texto personalizada */
+::selection {
+  background-color: var(--azul-claro);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--azul-claro);
+  color: white;
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+.carousel-inner img {
+  height: 585px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: brightness(0.85);
+}
+
+.carousel-item.active img {
+  filter: brightness(1);
+}
+
+.carousel-caption {
+  bottom: 40px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  background-color: rgba(53, 75, 140, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(53, 75, 140, 0.7);
+  border-radius: 50%;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(50, 154, 166, 0.9);
+  transform: scale(1.1);
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+#servicios {
+  padding: 50px 0 80px;
+  background-color: #f8f9fa;
+}
+
+#servicios h2,
+#especialistas h2,
+#nosotros h2,
+#contacto h2 {
+  color: var(--azul-medio);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+#servicios h2::after,
+#especialistas h2::after,
+#nosotros h2::after,
+#contacto h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--azul-medio), var(--azul-claro));
+  border-radius: 2px;
+}
+
+.row-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos si no llenan la fila */
+  gap: 20px; /* Espaciado entre tarjetas */
+}
+
+.service-item {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 350px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  filter: brightness(0.95);
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.service-item .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(53, 75, 140, 0.8);
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.service-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(53, 75, 140, 0.2);
+}
+
+.service-item .overlay h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service-item .overlay p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive: reduce gap y tamaño en móviles */
+@media (max-width: 768px) {
+  .row-servicios {
+    gap: 15px;
+  }
+  .service-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+/* =========================
+   NOSOTROS TABS
+========================= */
+#nosotros {
+  padding: 50px 0;
+}
+
+#nosotros h2 {
+  color: var(--azul-medio);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#nosotros .nav-pills .nav-link {
+  background-color: var(--azul-oscuro);
+  color: #fff;
+  margin-right: 8px;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+#nosotros .nav-pills .nav-link:hover {
+  background-color: var(--azul-medio);
+}
+
+#nosotros .nav-pills .nav-link.active {
+  background-color: var(--azul-claro);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#nosotros .tab-content {
+  flex-grow: 1;
+  padding-top: 20px;
+  font-size: 1rem;
+  min-height: 220px;
+  max-height: 350px;
+  color: #444;
+  line-height: 1.6;
+  position: relative;
+}
+
+#nosotros .tab-pane {
+  text-align: justify;
+  padding: 10px 5px;
+  animation: fadeIn 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nosotros-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 15px !important;
+}
+
+.nosotros-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+/* =========================
+   SEPARADOR
+========================= */
+.separador {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.separador-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  background-color: #000;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+/* Clase para fijar la imagen sin parallax */
+.separador-img-fixed {
+  transform: none !important;
+}
+
+.separador:hover .separador-img {
+  filter: brightness(0.6);
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px 20px 20px 220px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.overlay-content h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 1.5px 1.5px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+.overlay-content .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
+
+/* =========================
+   BOTONES Y FORMULARIOS
+========================= */
+.btn-primary {
+  background: linear-gradient(135deg, var(--azul-medio), var(--azul-claro));
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(48, 88, 140, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--azul-claro), var(--azul-medio));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(48, 88, 140, 0.3);
+}
+
+.form-control {
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: var(--azul-claro);
+  box-shadow: 0 0 0 0.15rem rgba(50, 154, 166, 0.2);
+}
+
+/* =========================
+   ESPECIALISTAS / CARDS
+========================= */
+#especialistas h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--azul-medio);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.carrusel {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra si hay solo 1 card */
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carrusel-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#especialistas .card {
+  width: 450px;           /* Anchura deseada */
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Para que img y body se acomoden verticalmente */
+}
+
+
+#especialistas .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#especialistas .card-img-top {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#especialistas .card-body {
+  padding: 18px;
+}
+
+#especialistas .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--azul-oscuro);
+}
+
+#especialistas .card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+
+/* =========================
+   FORMULARIO CONTACTO
+========================= */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-control {
+  border: 2px solid #e0e0e0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--azul-claro);
+  box-shadow: 0 0 0 0.2rem rgba(50, 154, 166, 0.15);
+  transform: translateY(-2px);
+}
+
+.contact-form .row {
+  width: 100%;
+  margin: 0;
+}
+
+.contact-form .col-md-6,
+.contact-form .col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Alertas del formulario centradas */
+#contacto .alert {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-submit {
+  padding: 12px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(48, 88, 140, 0.3);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+/* Animación del overlay de servicios */
+.service-item {
+  cursor: pointer;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(53, 75, 140, 0.9), rgba(50, 154, 166, 0.9));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.service-item:hover::before {
+  opacity: 1;
+}
+
+.service-item .overlay {
+  z-index: 2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  #servicios,
+  #nosotros,
+  #especialistas {
+    padding: 40px 20px;
+  }
+
+  .carousel-inner img {
+    height: 400px;
+  }
+  
+  .separador {
+    min-height: 300px;
+  }
+  
+  .overlay-content {
+    padding: 20px 20px 20px 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  #servicios h2,
+  #nosotros h2,
+  #especialistas h2 {
+    font-size: 1.7rem;
+  }
+
+  .overlay-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .overlay-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .overlay-content .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+  
+  #nosotros .nav-pills {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #nosotros .nav-pills .nav-link {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  #nosotros .tab-content {
+    min-height: auto;
+    padding: 20px 10px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  #especialistas .card {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  #especialistas .card-img-top {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .service-item {
+    width: 100%;
+  }
+  
+  .separador {
+    min-height: 250px;
+  }
+}
+
+

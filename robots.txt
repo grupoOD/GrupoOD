@@ -1,0 +1,12 @@
+# robots.txt para Grupo OD
+# https://www.grupo-od.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /php/
+Disallow: /db/
+Disallow: /.git/
+Disallow: /public/
+
+# Sitemap
+Sitemap: http://localhost/GrupoOD/sitemap.xml
