@@ -106,7 +106,7 @@
         <div class="service-item" data-aos="fade-up" data-aos-delay="200">
           <img src="/GrupoOD/img/ododonto2.jpg" alt="OD Odontologics - Servicios odontológicos">
           <div class="overlay">
-            <h5><i class="bi bi-teeth me-2"></i>OD Odontologics</h5>
+            <h5><i class="bi bi-brightness-high me-2"></i>OD Odontologics</h5>
             <p>Servicios odontológicos completos, desde limpieza hasta tratamientos especializados.</p>
           </div>
         </div>

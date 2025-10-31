@@ -22,9 +22,9 @@
           <a href="#servicios" class="dropdown-toggle"><i class="bi bi-briefcase me-2"></i>Servicios</a>
           <ul class="dropdown-menu">
             <li><a href="/GrupoOD/odmedics.php"><i class="bi bi-heart-pulse me-2"></i>ODMedics</a></li>
-            <li><a href="/GrupoOD/odondoto.php"><i class="bi bi-teeth me-2"></i>ODOntologics</a></li>
-            <li><a href="/GrupoOD/odsteteics.php"><i class="bi bi-stars me-2"></i>ODStetics</a></li>
-            <li><a href="/GrupoOD/odcouier.php"><i class="bi bi-box-seam me-2"></i>ODCourier</a></li>
+            <li><a href="/GrupoOD/odondoto.php"><i class="bi bi-brightness-high me-2"></i>ODOntologics</a></li>
+            <li><a href="/GrupoOD/odstetics.php"><i class="bi bi-stars me-2"></i>ODStetics</a></li>
+            <li><a href="/GrupoOD/odcourier.php"><i class="bi bi-box-seam me-2"></i>ODCourier</a></li>
           </ul>
         </li>
         <li class="nav-item"><a href="/GrupoOD/odblogs.php"><i class="bi bi-newspaper me-2"></i>ODBlogs</a></li>

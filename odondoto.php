@@ -50,24 +50,59 @@
             </p>
             <div class="row-servicios">
                 <div class="service-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="/GrupoOD/img/serOd1.jpg" alt="Ortodoncia profesional">
+                    <img src="/GrupoOD/img/serOd1.jpg" alt="Consultas generales">
+                    <div class="overlay">
+                        <h5><i class="bi bi-clipboard2-pulse me-2"></i>Consultas Generales</h5>
+                        <p>Evaluación integral de tu salud bucal con diagnóstico profesional.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/GrupoOD/img/serOd2.jpg" alt="Limpieza dental">
+                    <div class="overlay">
+                        <h5><i class="bi bi-droplet me-2"></i>Limpieza Dental</h5>
+                        <p>Profilaxis profesional para mantener tus dientes y encías saludables.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/GrupoOD/img/serOd3.png" alt="Ortodoncia">
                     <div class="overlay">
                         <h5><i class="bi bi-align-center me-2"></i>Ortodoncia</h5>
                         <p>Corrección de malposiciones dentales con brackets y alineadores invisibles.</p>
                     </div>
                 </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/GrupoOD/img/serOd2.jpg" alt="Implantes dentales">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/GrupoOD/img/serOd1.jpg" alt="Emergencias odontológicas">
                     <div class="overlay">
-                        <h5><i class="bi bi-gear me-2"></i>Implantes Dentales</h5>
-                        <p>Reemplazo de piezas dentales con implantes de titanio de última generación.</p>
+                        <h5><i class="bi bi-exclamation-triangle me-2"></i>Emergencias Odontológicas</h5>
+                        <p>Atención inmediata para dolor dental y urgencias las 24 horas.</p>
                     </div>
                 </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="/GrupoOD/img/serOd3.png" alt="Estética dental">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/GrupoOD/img/serOd2.jpg" alt="Radiografía dental">
                     <div class="overlay">
-                        <h5><i class="bi bi-star me-2"></i>Estética Dental</h5>
-                        <p>Blanqueamiento, carillas y diseño de sonrisa personalizado.</p>
+                        <h5><i class="bi bi-symmetry-vertical me-2"></i>Radiografía Dental</h5>
+                        <p>Diagnóstico por imagen con tecnología digital de última generación.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                    <img src="/GrupoOD/img/serOd3.png" alt="Tratamiento de caries">
+                    <div class="overlay">
+                        <h5><i class="bi bi-shield-check me-2"></i>Tratamiento de Caries</h5>
+                        <p>Restauraciones dentales con materiales de alta calidad y duración.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="700">
+                    <img src="/GrupoOD/img/serOd1.jpg" alt="Endodoncias">
+                    <div class="overlay">
+                        <h5><i class="bi bi-heart-pulse me-2"></i>Endodoncias</h5>
+                        <p>Tratamiento de conductos radiculares para salvar tus dientes naturales.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="800">
+                    <img src="/GrupoOD/img/serOd2.jpg" alt="Cirugía maxilofacial">
+                    <div class="overlay">
+                        <h5><i class="bi bi-scissors me-2"></i>Cirugía Maxilofacial</h5>
+                        <p>Procedimientos quirúrgicos especializados en maxilares y estructuras faciales.</p>
                     </div>
                 </div>
             </div>
