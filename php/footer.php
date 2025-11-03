@@ -21,10 +21,9 @@
         <h4><i class="bi bi-grid-3x3-gap-fill me-2"></i>SERVICIOS</h4>
         <ul>
           <li><i class="bi bi-chevron-right me-2"></i>OD Medics</li>
-          <li><i class="bi bi-chevron-right me-2"></i>OD Odontologics</li>
-          <li><i class="bi bi-chevron-right me-2"></i>OD Stetics</li>
+          <li><i class="bi bi-chevron-right me-2"></i>OD Odontomedics</li>
+          <li><i class="bi bi-chevron-right me-2"></i>OD Estetics</li>
           <li><i class="bi bi-chevron-right me-2"></i>OD Courier</li>
-          <li><i class="bi bi-chevron-right me-2"></i>Medicina Ocupacional</li>
         </ul>
       </div>
       <div class="footer-section">

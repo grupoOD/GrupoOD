@@ -97,9 +97,9 @@
             <!-- Grid de Artículos -->
             <div class="row" id="articlesContainer">
               <!-- Artículo 1 - Odontología -->
-              <div class="col-md-6" data-aos="fade-up" data-category="odontologia">
+              <div class="col-md-6" data-aos="fade-up" data-category="odontologia" data-tags="odontologia,salud,cuidado,prevencion">
                 <article class="blog-card">
-                  <img src="/GrupoOD/img/slide1.jpg" alt="Salud Dental" class="blog-card-img">
+                  <img src="/GrupoOD/img/ododonto2.jpg" alt="Salud Dental" class="blog-card-img">
                   <div class="blog-card-body">
                     <span class="blog-category">Odontología</span>
                     <h3>5 Consejos para una Sonrisa Saludable</h3>
@@ -118,9 +118,9 @@
               </div>
 
               <!-- Artículo 2 - Bienestar -->
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="bienestar">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="bienestar" data-tags="bienestar,salud,estilo-vida">
                 <article class="blog-card">
-                  <img src="/GrupoOD/img/slide2.jpg" alt="Bienestar" class="blog-card-img">
+                  <img src="/GrupoOD/img/medico.jpg" alt="Bienestar" class="blog-card-img">
                   <div class="blog-card-body">
                     <span class="blog-category">Bienestar</span>
                     <h3>Cómo Mantener un Estilo de Vida Saludable</h3>
@@ -139,9 +139,9 @@
               </div>
 
               <!-- Artículo 3 - Estética -->
-              <div class="col-md-6" data-aos="fade-up" data-category="estetica">
+              <div class="col-md-6" data-aos="fade-up" data-category="estetica" data-tags="estetica,tratamientos,belleza">
                 <article class="blog-card">
-                  <img src="/GrupoOD/img/slide3.jpg" alt="Estética" class="blog-card-img">
+                  <img src="/GrupoOD/img/odstetics1.jpg" alt="Estética" class="blog-card-img">
                   <div class="blog-card-body">
                     <span class="blog-category">Estética</span>
                     <h3>Tratamientos Estéticos: Qué Debes Saber</h3>
@@ -160,7 +160,7 @@
               </div>
 
               <!-- Artículo 4 - Salud General -->
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="salud">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="salud" data-tags="salud,prevencion,medicina">
                 <article class="blog-card">
                   <img src="/GrupoOD/img/odmedics2.jpg" alt="Salud General" class="blog-card-img">
                   <div class="blog-card-body">
@@ -181,7 +181,7 @@
               </div>
 
               <!-- Artículo 5 - Odontología Infantil -->
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="odontologia">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="odontologia" data-tags="odontologia,cuidado,prevencion">
                 <article class="blog-card">
                   <img src="/GrupoOD/img/ododonto2.jpg" alt="Odontología Infantil" class="blog-card-img">
                   <div class="blog-card-body">
@@ -225,7 +225,7 @@
                 <h4><i class="bi bi-clock-history me-2"></i>Artículos Recientes</h4>
                 
                 <div class="recent-post">
-                  <img src="/GrupoOD/img/slide1.jpg" alt="Post reciente" class="recent-post-img">
+                  <img src="/GrupoOD/img/ododonto2.jpg" alt="Post reciente" class="recent-post-img">
                   <div class="recent-post-content">
                     <h5><a href="#">Innovaciones en Tratamientos Dentales</a></h5>
                     <span class="recent-post-date">
@@ -235,7 +235,7 @@
                 </div>
 
                 <div class="recent-post">
-                  <img src="/GrupoOD/img/slide2.jpg" alt="Post reciente" class="recent-post-img">
+                  <img src="/GrupoOD/img/odmedics2.jpg" alt="Post reciente" class="recent-post-img">
                   <div class="recent-post-content">
                     <h5><a href="#">Medicina Preventiva: Tu Mejor Aliado</a></h5>
                     <span class="recent-post-date">
@@ -245,7 +245,7 @@
                 </div>
 
                 <div class="recent-post">
-                  <img src="/GrupoOD/img/slide3.jpg" alt="Post reciente" class="recent-post-img">
+                  <img src="/GrupoOD/img/odstetics1.jpg" alt="Post reciente" class="recent-post-img">
                   <div class="recent-post-content">
                     <h5><a href="#">Rutinas de Belleza Saludables</a></h5>
                     <span class="recent-post-date">
@@ -289,15 +289,8 @@
               <!-- Widget: Tags -->
               <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="200">
                 <h4><i class="bi bi-tags me-2"></i>Tags Populares</h4>
-                <div class="tag-cloud">
-                  <a href="#" class="tag">Salud</a>
-                  <a href="#" class="tag">Bienestar</a>
-                  <a href="#" class="tag">Odontología</a>
-                  <a href="#" class="tag">Prevención</a>
-                  <a href="#" class="tag">Estética</a>
-                  <a href="#" class="tag">Medicina</a>
-                  <a href="#" class="tag">Cuidado</a>
-                  <a href="#" class="tag">Tratamientos</a>
+                <div class="tag-cloud" id="tagCloud">
+                  <!-- Los tags se generan dinámicamente -->
                 </div>
               </div>
             </aside>
@@ -327,22 +320,118 @@
   <script src="/GrupoOD/js/main.js"></script>
   
   <script>
-    // Función para contar artículos por categoría
+    // Función para contar artículos por categoría (dinámico y real)
     function updateCategoryCounts() {
-      const categories = ['salud', 'odontologia', 'estetica', 'bienestar'];
+      const articles = document.querySelectorAll('#articlesContainer > [data-category]');
+      const categoryCounts = {};
       
-      categories.forEach(category => {
-        const count = document.querySelectorAll(`[data-category="${category}"]`).length;
+      // Contar artículos reales por categoría
+      articles.forEach(article => {
+        const category = article.getAttribute('data-category');
+        if (category) {
+          categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+        }
+      });
+      
+      // Actualizar los badges con el conteo real
+      Object.keys(categoryCounts).forEach(category => {
         const badge = document.getElementById(`count-${category}`);
         if (badge) {
-          badge.textContent = count;
+          badge.textContent = categoryCounts[category];
+        }
+      });
+      
+      // Poner 0 en categorías sin artículos
+      const allCategories = ['salud', 'odontologia', 'estetica', 'bienestar'];
+      allCategories.forEach(category => {
+        if (!categoryCounts[category]) {
+          const badge = document.getElementById(`count-${category}`);
+          if (badge) {
+            badge.textContent = '0';
+          }
         }
       });
     }
     
-    // Actualizar conteos cuando la página esté completamente cargada
+    // Función para generar tags populares dinámicamente
+    function generatePopularTags() {
+      const articles = document.querySelectorAll('#articlesContainer > [data-tags]');
+      const tagCounts = {};
+      
+      // Contar la frecuencia de cada tag
+      articles.forEach(article => {
+        const tags = article.getAttribute('data-tags');
+        if (tags) {
+          tags.split(',').forEach(tag => {
+            tag = tag.trim();
+            if (tag) {
+              tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            }
+          });
+        }
+      });
+      
+      // Ordenar tags por frecuencia (más usados primero)
+      const sortedTags = Object.entries(tagCounts)
+        .sort((a, b) => b[1] - a[1])
+        .map(([tag, count]) => ({ tag, count }));
+      
+      // Generar HTML de tags
+      const tagCloud = document.getElementById('tagCloud');
+      if (tagCloud && sortedTags.length > 0) {
+        tagCloud.innerHTML = sortedTags.map(({ tag, count }) => {
+          // Capitalizar primera letra
+          const displayTag = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ');
+          return `<a href="#" class="tag" data-tag="${tag}" title="${count} artículo${count > 1 ? 's' : ''}">${displayTag}</a>`;
+        }).join('');
+        
+        // Agregar funcionalidad de filtro a los tags
+        document.querySelectorAll('.tag[data-tag]').forEach(tagLink => {
+          tagLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const tag = this.getAttribute('data-tag');
+            filterByTag(tag);
+          });
+        });
+      }
+    }
+    
+    // Función para filtrar artículos por tag
+    function filterByTag(tag) {
+      const articles = document.querySelectorAll('#articlesContainer > [data-tags]');
+      let hasResults = false;
+      
+      articles.forEach(article => {
+        const tags = article.getAttribute('data-tags');
+        if (tags && tags.split(',').map(t => t.trim()).includes(tag)) {
+          article.style.display = 'block';
+          article.classList.add('aos-animate');
+          hasResults = true;
+        } else {
+          article.style.display = 'none';
+        }
+      });
+      
+      // Actualizar botón de categoría activo
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Scroll hacia los artículos
+      if (hasResults) {
+        document.querySelector('#articlesContainer').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+    
+    // Actualizar conteos y tags cuando la página esté completamente cargada
     window.addEventListener('load', function() {
-      setTimeout(updateCategoryCounts, 100);
+      setTimeout(() => {
+        updateCategoryCounts();
+        generatePopularTags();
+      }, 100);
     });
     
     // Filtro de categorías funcional

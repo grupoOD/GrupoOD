@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios - Grupo OD: OD Medics & OD Odontologics. Especialidades y servicios ofrecidos.">
+  <meta name="description" content="Servicios - Grupo OD: OD Medics & OD Odontomedics. Especialidades y servicios ofrecidos.">
   <link rel="icon" type="image/png" href="/GrupoOD/img/LogoODMedicsOfficial.png">
   <title>Grupo OD - Servicios</title>
   <link rel="stylesheet" href="/GrupoOD/css/estilos.css">
@@ -33,23 +33,42 @@
       <article id="odmedics" class="mb-5" data-aos="fade-up" data-aos-delay="150">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="service-item">
-              <img src="/GrupoOD/img/odmedics2.jpg" alt="OD Medics" />
-              <div class="overlay">
-                <h5><i class="bi bi-heart-pulse me-2"></i>OD Medics</h5>
-                <p>Atención médica integral con especialistas en diversas áreas para el diagnóstico y tratamiento de condiciones agudas y crónicas.</p>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="service-item">
+                  <img src="/GrupoOD/img/odmedics2.jpg" alt="OD Medics - Atención Médica" />
+                  <div class="overlay">
+                    <h5><i class="bi bi-heart-pulse me-2"></i>OD Medics</h5>
+                    <p>Atención médica integral con especialistas en diversas áreas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="service-item">
+                  <img src="/GrupoOD/img/serMed1.jpg" alt="OD Medics - Consultorios Especializados" />
+                  <div class="overlay">
+                    <h5><i class="bi bi-hospital me-2"></i>Instalaciones Modernas</h5>
+                    <p>Consultorios equipados con tecnología de vanguardia para tu salud.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <h3 class="mb-3">Especialidades médicas</h3>
             <ul class="list-unstyled">
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Médicina General</strong> – Atención primaria, control y seguimiento.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Pediatría</strong> – Controles, vacunación y atención infantil.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Medicina Interna</strong> – Manejo de enfermedades crónicas y estudios diagnósticos.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Ginecología</strong> – Controles, ecografías básicas y planificación familiar.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Medicina Laboral</strong> – Exámenes ocupacionales y certificaciones.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Urgencias y triage</strong> – Atención inicial y estabilización.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Medicina General</strong> – Atención primaria, control y seguimiento de la salud.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Gastroenterología</strong> – Diagnóstico y tratamiento de enfermedades digestivas.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Cardiología</strong> – Evaluación y manejo de enfermedades del corazón y sistema circulatorio.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Dermatología y Cosmetología</strong> – Cuidado de la piel, tratamientos estéticos y dermatológicos.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Neurología</strong> – Atención de trastornos del sistema nervioso central y periférico.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Ginecología y Obstetricia</strong> – Control prenatal, salud reproductiva y atención integral de la mujer.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Urología</strong> – Diagnóstico y tratamiento de afecciones del sistema urinario y reproductor masculino.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Traumatología</strong> – Atención a lesiones óseas, musculares y articulares.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Pediatría</strong> – Control del crecimiento, vacunación y atención integral del niño.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Endocrinología</strong> – Diagnóstico y manejo de trastornos hormonales y metabólicos.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Medicina Familiar</strong> – Atención integral y continua para toda la familia.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Otorrinolaringología</strong> – Diagnóstico y tratamiento de enfermedades del oído, nariz y garganta.</li>
             </ul>
 
             <h4 class="mt-4">Servicios destacados</h4>
@@ -70,14 +89,14 @@
 
       <hr />
 
-      <!-- OD Odontologics -->
+      <!-- OD Odontomedics -->
       <article id="ododonto" class="mb-5" data-aos="fade-up" data-aos-delay="200">
         <div class="row align-items-center flex-row-reverse">
           <div class="col-md-6">
             <div class="service-item">
-              <img src="/GrupoOD/img/ododonto2.jpg" alt="OD Odontologics" />
+              <img src="/GrupoOD/img/ododonto2.jpg" alt="OD Odontomedics" />
               <div class="overlay">
-                <h5><i class="bi bi-teeth me-2"></i>OD Odontologics</h5>
+                <h5><i class="bi bi-teeth me-2"></i>OD Odontomedics</h5>
                 <p>Servicios odontológicos integrales: prevención, restauración y estética dental con tecnología y profesionales calificados.</p>
               </div>
             </div>
@@ -85,12 +104,14 @@
           <div class="col-md-6">
             <h3 class="mb-3">Especialidades odontológicas</h3>
             <ul class="list-unstyled">
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Odontología General</strong> – Higiene, profilaxis y controles periódicos.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Endodoncia</strong> – Tratamiento de conductos y manejo de dolor dental.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Periodoncia</strong> – Manejo de encías y salud periodontal.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Ortodoncia</strong> – Corrección de maloclusiones y estética de la sonrisa.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Rehabilitación oral</strong> – Prótesis fija y removible.</li>
-              <li><i class="bi bi-chevron-right me-2"></i><strong>Cirugía oral</strong> – Extracciones y procedimientos menores.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Consultas Generales</strong> – Evaluación integral de salud bucal.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Limpieza Dental</strong> – Profilaxis profesional y prevención.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Ortodoncia</strong> – Corrección de malposiciones dentales.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Emergencias Odontológicas</strong> – Atención inmediata de urgencias.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Radiografía Dental</strong> – Diagnóstico por imagen digital.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Tratamiento de Caries</strong> – Restauraciones dentales de calidad.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Endodoncia</strong> – Tratamiento de conductos radiculares.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Cirugía Maxilofacial</strong> – Procedimientos quirúrgicos especializados.</li>
             </ul>
 
             <h4 class="mt-4">Servicios destacados</h4>
@@ -109,26 +130,75 @@
         </div>
       </article>
 
-      <!-- Sección de servicios adicionales breve -->
-      <section class="mt-4" data-aos="fade-up" data-aos-delay="250">
-        <h3 class="text-center mb-3">Otros servicios del Grupo OD</h3>
-        <div class="row row-servicios justify-content-center">
-          <div class="service-item" style="width:320px;" data-aos="fade-up" data-aos-delay="300">
-            <img src="/GrupoOD/img/odstetics1.jpg" alt="OD Stetics" />
-            <div class="overlay">
-              <h5><i class="bi bi-stars me-2"></i>OD Stetics</h5>
-              <p>Estética médica avanzada y tratamientos personalizados.</p>
+      <hr />
+
+      <!-- OD Courier -->
+      <article id="odcourier" class="mb-5" data-aos="fade-up" data-aos-delay="250">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="service-item">
+              <img src="/GrupoOD/img/courier.jpg" alt="OD Courier" />
+              <div class="overlay">
+                <h5><i class="bi bi-box-seam me-2"></i>OD Courier</h5>
+                <p>Importación y logística especializada de productos médicos y farmacéuticos con certificaciones internacionales.</p>
+              </div>
             </div>
           </div>
-          <div class="service-item" style="width:320px;" data-aos="fade-up" data-aos-delay="350">
-            <img src="/GrupoOD/img/odcourier.png" alt="OD Courier" />
-            <div class="overlay">
-              <h5><i class="bi bi-box-seam me-2"></i>OD Courier</h5>
-              <p>Importación y logística de productos médicos especializados.</p>
+          <div class="col-md-6">
+            <h3 class="mb-3">Servicios de Importación</h3>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Gestión de Importaciones</strong> – Te ayudamos a traer productos médicos del extranjero.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Trámites Aduaneros</strong> – Nos encargamos de la documentación necesaria.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Asesoría Personalizada</strong> – Te acompañamos en cada paso del proceso.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Productos Médicos</strong> – Importación de equipos e insumos médicos.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Productos Odontológicos</strong> – Insumos e instrumental odontológico.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Productos Farmacéuticos</strong> – Medicamentos y productos especializados.</li>
+            </ul>
+
+            <h4 class="mt-4">¿Qué ofrecemos?</h4>
+            <ul>
+              <li><i class="bi bi-check2-circle me-2 text-success"></i>Proceso simplificado y claro</li>
+              <li><i class="bi bi-check2-circle me-2 text-success"></i>Cumplimiento de todas las regulaciones</li>
+              <li><i class="bi bi-check2-circle me-2 text-success"></i>Comunicación directa y constante</li>
+              <li><i class="bi bi-check2-circle me-2 text-success"></i>Atención personalizada para cada cliente</li>
+              <li><i class="bi bi-check2-circle me-2 text-success"></i>Transparencia en costos y tiempos</li>
+            </ul>
+
+            <div class="mt-3">
+              <a href="/GrupoOD/index.php#contacto" class="btn btn-primary">Solicitar información <i class="bi bi-arrow-right ms-2"></i></a>
             </div>
           </div>
         </div>
-      </section>
+      </article>
+
+      <hr />
+
+      <!-- OD Stetics -->
+      <article id="odstetics" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-md-6">
+            <div class="service-item">
+              <img src="/GrupoOD/img/odstetics1.jpg" alt="OD Stetics" />
+              <div class="overlay">
+                <h5><i class="bi bi-stars me-2"></i>OD Stetics</h5>
+                <p>Estética médica avanzada y tratamientos personalizados para el cuidado integral de tu imagen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="mb-3">Estética y Bienestar</h3>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Tratamientos Faciales</strong> – Rejuvenecimiento y cuidado de la piel.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Tratamientos Corporales</strong> – Modelado y tonificación.</li>
+              <li><i class="bi bi-chevron-right me-2"></i><strong>Medicina Estética</strong> – Procedimientos mínimamente invasivos.</li>
+            </ul>
+
+            <div class="mt-3">
+              <a href="/GrupoOD/index.php#contacto" class="btn btn-primary">Agenda tu consulta <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
 
     </section>
   </main>

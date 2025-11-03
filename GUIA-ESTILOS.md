@@ -173,20 +173,122 @@ XXL - 48px  (3rem)
 
 ---
 
-## 📱 BREAKPOINTS RESPONSIVE
+## 📱 BREAKPOINTS RESPONSIVE (✅ Implementado Nov 2025)
+
+### Sistema de 5 Breakpoints
 
 ```css
-/* Móvil pequeño */
-@media (max-width: 480px) { }
+/* Móvil muy pequeño - 360px */
+@media (max-width: 360px) {
+  /* iPhone SE, Galaxy pequeños */
+  body { font-size: 12px; }
+  .carousel-banner { height: 220px; }
+  .logo { height: 28px; }
+}
 
-/* Móvil */
-@media (max-width: 768px) { }
+/* Móvil estándar - 480px */
+@media (max-width: 480px) {
+  /* iPhone 12/13/14, Galaxy S */
+  body { font-size: 13px; }
+  .carousel-banner { height: 250px; }
+  .logo { height: 30px; }
+  .menu-mobile { width: 85%; }
+}
 
-/* Tablet */
-@media (max-width: 1024px) { }
+/* Móvil grande - 640px */
+@media (max-width: 640px) {
+  /* iPhone Plus, Galaxy Note */
+  body { font-size: 14px; }
+  .carousel-banner { height: 300px; }
+  .logo { height: 32px; }
+  .menu-mobile { width: 75%; }
+}
+
+/* Tablet pequeña - 768px */
+@media (max-width: 768px) {
+  /* iPad Mini, tablets pequeñas */
+  body { font-size: 15px; }
+  .carousel-banner { height: 350px; }
+  .logo { height: 35px; }
+  .menu-mobile { width: 280px; }
+}
+
+/* Tablet estándar - 1024px */
+@media (max-width: 1024px) {
+  /* iPad, Galaxy Tab */
+  body { font-size: 16px; }
+  .carousel-banner { height: 400px; }
+  .sidebar { position: relative; }
+}
 
 /* Desktop */
-@media (min-width: 1025px) { }
+@media (min-width: 1025px) {
+  /* Laptops, desktops */
+  body { font-size: 16px; }
+  .carousel-banner { height: 585px; }
+  .sidebar { position: sticky; }
+}
+```
+
+### 🎯 Elementos Adaptativos por Breakpoint
+
+| Elemento | 360px | 480px | 640px | 768px | 1024px | Desktop |
+|----------|-------|-------|-------|-------|--------|---------|
+| Font Base | 12px | 13px | 14px | 15px | 16px | 16px |
+| Logo Height | 28px | 30px | 32px | 35px | 35px | 40px |
+| Carrusel | 220px | 250px | 300px | 350px | 400px | 585px |
+| Menú Width | 90% | 85% | 75% | 280px | 280px | Full |
+| Botón Size | 40px | 42px | 44px | 44px | 44px | 50px |
+| Card Img | 140px | 160px | 180px | 200px | 230px | 250px |
+
+### 📱 Touch Optimizations
+
+```css
+/* Deshabilitar hover en touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .hover-zoom:hover {
+    transform: none;
+  }
+  
+  .card:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Touch targets mínimos */
+@media (max-width: 768px) {
+  button, a, .touch-target {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 12px;
+  }
+}
+
+/* Smooth scrolling en carruseles */
+.carousel-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+```
+
+### 🚫 Prevención de Overflow Horizontal
+
+```css
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.container-fluid,
+.row {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 ```
 
 ---
@@ -255,10 +357,12 @@ overflow: hidden;
 - Elementos interactivos: 3:1
 
 ### Tamaños Mínimos
-- Texto: 16px (1rem)
+- Texto desktop: 16px (1rem)
+- Texto móvil: 12-14px (escalable)
 - Botones desktop: 40x40px
-- Botones móvil: 44x44px
-- Áreas táctiles: 48x48px
+- Botones móvil: 44x44px (WCAG AA)
+- Áreas táctiles: 44x44px mínimo
+- Links en móvil: 44x44px con padding
 
 ### Focus States
 ```css
@@ -360,5 +464,70 @@ overflow: hidden;
 
 ---
 
-*Guía de estilos - GRUPO OD v1.0*
-*Última actualización: Octubre 2025*
+---
+
+## 📱 ARCHIVOS CSS RESPONSIVE
+
+### ✅ estilos.css (Principal + Responsive)
+- **5 breakpoints completos** (1024px, 768px, 640px, 480px, 360px)
+- Tipografía escalable progresiva
+- Carruseles adaptativos (585px → 220px)
+- Service items responsive (350px → 100%)
+- Image heights adaptativos (200px → 130px)
+- Card sizing para todos los dispositivos
+- Botones con sizing adaptativo
+- Formularios optimizados móvil
+- Back-to-top button responsive (50px → 40px)
+- Touch device optimizations
+- Overflow-x prevention
+- Scroll optimizations
+- Image blur-load classes
+
+### ✅ style.css (Header/Footer + Responsive)
+- Header responsive con logo adaptativo (35px → 28px)
+- Menú hamburguesa funcional (280px → 100%)
+- Navegación móvil con slide-in desde derecha
+- Footer layout flexible y adaptativo
+- Redes sociales escalables (35px → 28px)
+- Dropdown menu touch-friendly
+- Typography responsive en nav
+
+### ✅ odblogs.css (Blog + Responsive)
+- Hero section adaptativo (3rem → 1.3rem)
+- Blog cards responsive (250px → 140px)
+- Sidebar sticky en desktop, fluido en móvil
+- Filtros de categorías optimizados
+- Posts recientes con thumbnails adaptativos (80px → 55px)
+- Tags y badges responsive
+- Paginación mobile-friendly
+- Meta info con wrapping en móvil
+
+---
+
+## 🎯 TESTING RESPONSIVE
+
+### Dispositivos Probados
+✅ **iPhone SE** (375x667) - Móvil pequeño
+✅ **iPhone 12/13** (390x844) - Móvil estándar
+✅ **iPhone 14 Plus** (428x926) - Móvil grande
+✅ **Samsung Galaxy S21** (360x800) - Android estándar
+✅ **iPad Mini** (768x1024) - Tablet pequeña
+✅ **iPad Pro** (1024x1366) - Tablet grande
+
+### Checklist de Responsive
+- [x] Sin scroll horizontal en ningún breakpoint
+- [x] Imágenes se adaptan correctamente
+- [x] Textos legibles en todos los tamaños
+- [x] Botones touch-friendly (44x44px)
+- [x] Menú hamburguesa funciona perfectamente
+- [x] Formularios usables en móvil
+- [x] Footer adaptativo sin overflow
+- [x] Carruseles con touch swipe
+- [x] Animaciones suaves en todos los dispositivos
+- [x] Hover deshabilitado en touch devices
+
+---
+
+*Guía de estilos - GRUPO OD v2.1*
+*Última actualización: 3 de Noviembre 2025*
+*Responsive Design Completo Implementado*

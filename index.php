@@ -43,29 +43,29 @@
       <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/GrupoOD/img/slide1.jpg" class="d-block w-100" alt="Profesionales médicos atendiendo pacientes" />
+            <img src="/GrupoOD/img/carrusel.jpg" class="d-block w-100" alt="Sala de espera moderna y cómoda" />
             <div class="carousel-caption">
               <h5>
-                Atención médica integral con profesionales especializados y 
-                experiencia comprobada.
+                Bienvenido a un espacio diseñado para tu comodidad y tranquilidad. 
+                Tu salud comienza aquí.
               </h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/GrupoOD/img/slide2.jpg" class="d-block w-100" alt="Servicios médicos de calidad" />
+            <img src="/GrupoOD/img/clinica2.jpg" class="d-block w-100" alt="Consultorio médico equipado" />
             <div class="carousel-caption">
               <h5>
-                Predispuestos a brindar un servicio de calidad con atención
-                personalizada
+                Consultorios médicos modernos con tecnología de vanguardia 
+                para tu diagnóstico y tratamiento integral.
               </h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/GrupoOD/img/slide3.jpg" class="d-block w-100" alt="Equipo médico profesional" />
+            <img src="/GrupoOD/img/clinica3.jpeg" class="d-block w-100" alt="Consultorio odontológico especializado" />
             <div class="carousel-caption">
               <h5>
-                Profesionales capacitados y actualizados en técnicas
-                científicas
+                Atención odontológica especializada en un ambiente profesional 
+                que garantiza tu mejor sonrisa.
               </h5>
             </div>
           </div>
@@ -104,9 +104,9 @@
           </div>
         </div>
         <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-          <img src="/GrupoOD/img/ododonto2.jpg" alt="OD Odontologics - Servicios odontológicos">
+          <img src="/GrupoOD/img/ododonto2.jpg" alt="OD Odontomedics - Servicios odontológicos">
           <div class="overlay">
-            <h5><i class="bi bi-brightness-high me-2"></i>OD Odontologics</h5>
+            <h5><i class="bi bi-brightness-high me-2"></i>OD Odontomedics</h5>
             <p>Servicios odontológicos completos, desde limpieza hasta tratamientos especializados.</p>
           </div>
         </div>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-          <img src="/GrupoOD/img/odcourier.png" alt="OD Courier - Importación de productos médicos">
+          <img src="/GrupoOD/img/courier.jpg" alt="OD Courier - Importación de productos médicos">
           <div class="overlay">
             <h5><i class="bi bi-box-seam me-2"></i>OD Courier</h5>
             <p>Servicios de importación seguros de productos médicos y especializados.</p>
@@ -212,7 +212,7 @@
 
     <!-- Contacto -->
     <section id="contacto" class="container py-5">
-      <h2 class="text-center mb-4">¡TU BIENESTAR, NUESTRA SATISFACCIÓN!</h2>
+      <h2 class="text-center mb-4">¡TU SALUD, NUESTRA MEJOR ESPECIALIDAD!</h2>
       <p class="text-center text-muted mb-4">
         Ponte en las manos de los mejores especialistas en el GRUPO OD
       </p>
